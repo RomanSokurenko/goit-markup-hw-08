@@ -1511,6 +1511,11 @@ header {
   }
 }
 
+.map:hover,
+.map:focus {
+  color: #2196f3;
+}
+
 .address-link {
   display: block;
   font-style: normal;
@@ -1523,6 +1528,11 @@ header {
 
 .address-link:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -1656,7 +1666,7 @@ header {
 .button-text::after {
   display: block;
   margin-left: 10px;
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   background-image: url(../images/icons/symbol-defs-opt.svg);

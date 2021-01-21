@@ -1,0 +1,21 @@
+@import "./utils/variabels";
+@import "./utils/normolize";
+@import "./utils/placeholders";
+@import "./utils/breakpoints";
+@import "./utils/fonts";
+
+@import "./base/common";
+@import "./base/base";
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/services";
+@import "./components/modal";
+@import "./components/footer";
+@import "./components/portfolio";
+@import "./components/buttons";
+@import "./components/social-list";

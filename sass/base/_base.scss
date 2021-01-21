@@ -1,0 +1,35 @@
+body {
+    margin: 0 auto;
+    padding: 0px;
+    // font-family: 'Roboto', sans-serif;
+    font-family: $main-font, sans-serif;
+  }
+  
+  ul,
+  li {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+  
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  

@@ -1,0 +1,63 @@
+/* SERVICES + TEAM + CLIENTS*/
+.services {
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
+  
+  
+//   .team-list,
+  .services-list
+  {
+    display: flex;
+  }
+  
+ 
+  
+  .services-item {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+  
+//   .team .title,
+//   .clients .title, 
+  .services-title{
+    @extend %section-title;
+     // margin-bottom: 30px; 
+  
+    // color: $title-text-color;
+    // font-size: 28px; 
+    // font-weight: 700;
+    // letter-spacing: 0.03em;
+    // line-height: 1.17;
+    // text-align: center;
+    @media screen and (min-width:1200px){
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  }
+  
+   
+  .services-list-title {
+    position: absolute;
+    bottom: 0%;
+  
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+  
+    background: rgba(47, 48, 58, 0.8);
+    color: $accent-color-2;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  

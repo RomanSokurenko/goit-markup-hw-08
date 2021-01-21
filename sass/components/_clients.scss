@@ -1,0 +1,128 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+  @media screen and (min-width:1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  }
+
+//   .services .title,
+//   .team .title,
+.clients-title {
+    @extend %section-title;
+     // margin-bottom: 30px; 
+  
+    // color: $title-text-color;
+    // font-size: 28px; 
+    // font-weight: 700;
+    // letter-spacing: 0.03em;
+    // line-height: 1.17;
+    // text-align: center;
+    @media screen and (min-width:1200px){
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  }
+  
+.clients-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  @media screen and (min-width:1200px){
+    flex-wrap: nowrap;
+  }
+  }
+
+.clients-item{
+    width: calc((100% - 30px) / 2);
+    height: 90px;
+    @media screen and (min-width:480px){
+      width: 210px;
+    }
+    @media screen and (min-width:768px){
+    width: 226px;
+    }
+    @media screen and (min-width:1200px){
+    width: 170px;
+    }
+  }
+  
+@media screen and (max-width:767px){
+      .clients-item:nth-child(2n+1){
+      margin-right: 30px;
+    }
+    .clients-item:nth-child(-n+4){
+      margin-bottom: 30px;
+    }
+  }
+  
+@media screen and (min-width:768px){
+    .clients-item:not(:nth-child(3n)){
+    margin-right: 30px;
+  }
+  .clients-item:nth-child(-n+3){
+    margin-bottom: 30px;
+  }
+}
+  
+@media screen and (min-width:1200px){
+      .clients-item{
+        margin-bottom: 30px;
+      }
+      .clients-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+.clients-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: $icon-color;
+  
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus {
+      border: 1px solid $accent-color;
+      color: $accent-color;
+  }
+  }
+  
+  .client-1 {
+    width: 44.3px;
+    height: 49.2px;
+  }
+  .client-2 {
+    width: 40px;
+    height: 52px;
+  }
+  .client-3 {
+    width: 41px;
+    height: 42.6px;
+  }
+  .client-4 {
+    width: 79.7px;
+    height: 42px;
+  }
+  .client-5 {
+    width: 59px;
+    height: 47px;
+  }
+  .client-6 {
+    width: 88.5px;
+    height: 48.4px;
+  }
+  
+  .clients-icon {
+    fill: currentColor;
+  }
+  

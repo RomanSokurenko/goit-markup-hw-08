@@ -1,0 +1,109 @@
+.hero {
+
+    padding-bottom: 118px;
+    padding-top: 118px;
+    text-align: center;
+
+    @media screen and (max-width: 767px){
+      margin-top: 60px;
+    }
+
+  @media screen and (min-width: 1200px){
+    padding-bottom: 200px;
+    padding-top: 200px;
+  } 
+  }
+  
+.overlay {
+  margin-left: auto;
+  margin-right: auto; 
+  background-color: $background-color;
+
+  height: 400px;
+  max-width: 480px;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-mobile-opt@1x.jpg);
+    background-size: cover;
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image:linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),url(../images/hero-mobile-opt@2x.jpg);
+      }
+
+  @media screen and (min-width: 480px){
+    height: 400px;
+    max-width: 768px;
+    background-image: 
+    linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet-opt@1x.jpg);
+     
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image:linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tablet-opt@2x.jpg);
+      }
+  }
+  @media screen and (min-width: 768px){
+    height: 400px;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-desktop-opt@1x.jpg);
+     
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image:linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-desktop-opt@2x.jpg);
+      }
+    }
+  @media screen and (min-width: 1200px){
+        height: 600px;
+        max-width: 1600px; 
+       }
+  }
+  
+.hero-title {
+  margin: 0px;
+  margin-bottom: 30px;
+  color: $accent-color-2;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  
+  @media screen and (min-width: 1200px){
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+  }
+  }
+  
